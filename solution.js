@@ -49,6 +49,19 @@ function absolut(n) {
     return Math.abs(n);
 }
 
+function maksimum(a, b) {
+    return Math.max(a, b);
+}
+
+function minimum(a, b) {
+    return Math.min(a, b);
+}
+
+function bulatkan(n) {
+    return Math.round(n);
+}
+
+
 module.exports = {
     tambah,
     kurang,
@@ -58,5 +71,8 @@ module.exports = {
     faktorial,
     isPrima,
     modulus,
-    absolut
+    absolut,
+    maksimum,
+    minimum,
+    bulatkan
 };
