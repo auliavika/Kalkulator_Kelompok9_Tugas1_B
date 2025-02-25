@@ -33,11 +33,30 @@ function faktorial(n) {
     return result;
 }
 
+function isPrima(n) {
+    if (n < 2) return false;
+    for (let i = 2; i <= Math.sqrt(n); i++) {
+        if (n % i === 0) return false;
+    }
+    return true;
+}
+
+function modulus(a, b) {
+    return a % b;
+}
+
+function absolut(n) {
+    return Math.abs(n);
+}
+
 module.exports = {
     tambah,
     kurang,
     kali,
     bagi,
     pangkat,
-    faktorial
+    faktorial,
+    isPrima,
+    modulus,
+    absolut
 };
